@@ -55,12 +55,12 @@
 
 // Dice 1
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-var randomDiceImage1 = "./images/dice" + randomNumber1 + ".png";
+var randomDiceImage1 = "dice" + randomNumber1 + ".png";
 document.querySelector(".img1").setAttribute("src", randomDiceImage1);
 
 // Dice 2
 var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-var randomDiceImage2 = "./images/dice" + randomNumber2 + ".png";
+var randomDiceImage2 = "dice" + randomNumber2 + ".png";
 document.querySelector(".img2").setAttribute("src", randomDiceImage2);
 
 if(randomNumber1>randomNumber2){
@@ -72,4 +72,5 @@ else if(randomNumber1<randomNumber2){
 else
 {
     document.querySelector(".container h1").innerHTML="Game Tied"
+
 }
